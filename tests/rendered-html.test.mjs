@@ -44,6 +44,7 @@ test("keeps the MVP interaction contracts in place", async () => {
   assert.match(page, /single-suite appointment:/);
   assert.match(page, /connected-suite appointment:/);
   assert.match(page, /Changes apply to new bookings only\./);
+  assert.match(page, /const timeOptions = Array\.from\(\{ length: 17 \}, \(_, index\) => index \+ 8\)/);
   assert.match(page, /searchParams\.set\("floor", floorId\)/);
   assert.match(css, /\.calendar-scroll[^}]*overflow-x:\s*auto/);
   assert.doesNotMatch(css, /date-head:nth-of-type/);

@@ -146,7 +146,7 @@ function FloorEditor({ building, floor, onSave, onDelete }: { building: Building
   const [connectedSuiteDuration, setConnectedSuiteDuration] = useState(floor?.connectedSuiteDuration ?? 3);
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
-  const timeOptions = Array.from({ length: 15 }, (_, index) => index + 8);
+  const timeOptions = Array.from({ length: 17 }, (_, index) => index + 8);
   const durationOptions = Array.from({ length: 12 }, (_, index) => (index + 1) / 2);
 
   const submit = async (event: React.FormEvent) => {
